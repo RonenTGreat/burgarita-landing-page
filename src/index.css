@@ -15,19 +15,6 @@ body {
   overflow-x: hidden;
 }
 
-body {
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-  background-image: radial-gradient(
-      50% 50% at 50% 50%,
-      rgba(22, 22, 22, 0.44) 0%,
-      rgba(22, 22, 22, 0.78) 100%
-    ),
-    url("../src/assets/background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 img,
 picture,
 video,
@@ -59,8 +46,37 @@ h6 {
   isolation: isolate;
 }
 
+ul, li{
+  list-style: none;
+}
+
+
 :root {
   --primary: #ff9900;
   --secondary: #d1d1d2;
   font-family: "Montserrat", sans-serif;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-image: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(22, 22, 22, 0.44) 0%,
+      rgba(22, 22, 22, 0.78) 100%
+    ),
+    url("../src/assets/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--secondary);
+}
+
+a {
+  text-decoration: none;
+  color: var(--secondary);
+}
+
+
+.container {
+  margin: 1rem 5rem;
 }

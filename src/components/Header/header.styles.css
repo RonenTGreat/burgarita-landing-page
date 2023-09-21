@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo svg {
+  margin-bottom: 1rem;
+}
+
+.logo p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-left: 1rem;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 3.35rem;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.btn-signup {
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 0.5rem 1.4rem;
+  border-radius: 1.8rem;
+  background: #f90;
+  box-shadow: 0px 0px 80px 0px rgba(255, 47, 49, 0.25);
+}
