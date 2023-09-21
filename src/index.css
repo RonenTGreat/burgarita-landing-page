@@ -6,6 +6,7 @@
 
 * {
   margin: 0;
+  padding: 0;
 }
 
 html,
@@ -17,6 +18,14 @@ body {
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  background-image: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(22, 22, 22, 0.44) 0%,
+      rgba(22, 22, 22, 0.78) 100%
+    ),
+    url("../src/assets/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 img,
@@ -53,4 +62,5 @@ h6 {
 :root {
   --primary: #ff9900;
   --secondary: #d1d1d2;
+  font-family: "Montserrat", sans-serif;
 }
