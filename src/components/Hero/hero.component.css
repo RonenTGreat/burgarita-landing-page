@@ -1,0 +1,71 @@
+.hero section {
+  display: flex;
+  margin-top: 6rem;
+}
+
+.hero-taste {
+  max-width: 18rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0.5rem 1.5rem;
+  text-align: center;
+  border-radius: 3.9375rem;
+  border: 3px solid #f90;
+  background: linear-gradient(
+    91deg,
+    rgba(22, 22, 22, 0.56) 5.52%,
+    rgba(68, 66, 66, 0.42) 99.76%
+  );
+  margin-bottom: 2.5rem;
+  margin-top: 3rem;
+}
+
+.hero-article {
+  margin-bottom: 2rem;
+}
+
+.hero-header {
+  font-size: 4rem;
+}
+
+.orange-text {
+  color: var(--primary);
+}
+
+.hero-desc {
+  font-size: 1.5rem;
+  margin: 2rem 0;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  padding: 0.7rem 0;
+  border-radius: 1.3rem;
+  background: #fff;
+  box-shadow: 0px 0px 80px 0px rgba(255, 255, 255, 0.14);
+}
+
+.hero-form input {
+  border-radius: 1.3rem;
+  padding: 1rem 2rem;
+  border: none;
+  outline: none;
+}
+
+.btn-grab-it {
+  color: var(--secondary);
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0.5rem 3rem;
+  margin-left: 4.5rem;
+  border: none;
+  border-radius: 1.3rem;
+  background: linear-gradient(90deg, #f90 1.66%, #ff2f31 99.83%);
+  box-shadow: 0px 0px 80px 0px rgba(255, 255, 255, 0.14);
+  cursor: pointer;
+}
+
+.hero img {
+  max-width: 41rem;
+}
