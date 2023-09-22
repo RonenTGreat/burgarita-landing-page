@@ -46,10 +46,10 @@ h6 {
   isolation: isolate;
 }
 
-ul, li{
+ul,
+li {
   list-style: none;
 }
-
 
 :root {
   --primary: #ff9900;
@@ -62,10 +62,10 @@ body {
   -webkit-font-smoothing: antialiased;
   background-image: radial-gradient(
       50% 50% at 50% 50%,
-      rgba(22, 22, 22, 0.44) 0%,
-      rgba(22, 22, 22, 0.78) 100%
+      rgb(22 22 22 / 90%) 0%,
+      rgb(22 22 22 / 90%) 100%
     ),
-    url("../src/assets/background.jpg");
+    url(/src/assets/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   color: var(--secondary);
@@ -75,7 +75,6 @@ a {
   text-decoration: none;
   color: var(--secondary);
 }
-
 
 .container {
   margin: 1rem 5rem;
