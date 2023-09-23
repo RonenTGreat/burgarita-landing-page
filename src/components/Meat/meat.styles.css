@@ -1,0 +1,10 @@
+.meats {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.meat-img {
+  aspect-ratio: 1/1;
+}
