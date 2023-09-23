@@ -71,22 +71,56 @@ form {
   max-width: 41rem;
 }
 
-.platter article{
+.platter {
+  margin-bottom: 6rem;
+}
+
+.platter article {
   text-align: center;
   max-width: 50rem;
   margin: 0 auto;
 }
 
-.platter-header{
+.platter-header {
   font-size: 4rem;
   margin-bottom: 1.5rem;
 }
 
-.platter article p{
+.platter article p {
   font-size: 1.5rem;
 }
 
-.platter-dish{
+.platter-dish {
   display: flex;
   justify-content: center;
+}
+
+.explore {
+  display: flex;
+  align-items: center;
+}
+
+.explore-header{
+  font-size: 4rem;
+}
+
+.explore-desc{
+  font-size: 1.5rem;
+  margin: 3rem 0;
+}
+
+.explore-img{
+  max-width: 35rem;
+}
+
+.pepper{
+  margin: 0 auto;
+  width: 4.5rem;
+}
+
+
+.meals{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
 }

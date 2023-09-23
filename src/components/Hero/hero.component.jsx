@@ -1,9 +1,15 @@
 import "./hero.component.css";
 import food from "../../assets/hero-food.png";
 import Meat from "../Meat/meat.component";
-import meat_1 from "../../assets/meat-1.png"
-import meat_2 from "../../assets/meat-2.png"
-import meat_3 from "../../assets/meat-3.png"
+import meat_1 from "../../assets/meat-1.png";
+import meat_2 from "../../assets/meat-2.png";
+import meat_3 from "../../assets/meat-3.png";
+import explore from "../../assets/explore-dish.png";
+import pepper from "../../assets/Red_Chili_Pepper.svg"
+import meal_1 from "../../assets/grilled-food.png"
+import meal_2 from "../../assets/oyster.png"
+import meal_3 from "../../assets/gros.png"
+import meal_4 from "../../assets/lovepik.png"
 
 const Hero = () => {
   return (
@@ -43,24 +49,62 @@ const Hero = () => {
             masterpiece waiting to be savored
           </p>
         </article>
-
         <div className="platter-dish">
-          <Meat 
-            name="Grilled meat in plate"
-            image={meat_1}
-            price="$32.50 "
-          />
-          <Meat 
-            name="Grilled meat in plate"
+          <Meat name="Grilled meat in plate" image={meat_1} price="$32.50" />
+          <Meat
+            name="Beef steak with saulted veg"
             image={meat_2}
-            price="$32.50 "
+            price="$40.00"
           />
-          <Meat 
-            name="Grilled meat in plate"
-            image={meat_3}
-            price="$32.50 "
-          />
+          <Meat name="Barbecue Grill Beefsteak" image={meat_3} price="$40.00" />
         </div>
+      </section>
+
+      <section className="explore">
+        <article>
+          <h2 className="explore-header">
+            Explore our <span className="orange-text">exclusive</span> dishes
+          </h2>
+          <p className="explore-desc">
+            Our exclusive dishes are crafted with a blend of creativity,
+            expertise, and the finest ingredients, resulting in a symphony of
+            flavors that will transport your taste buds to new heights of
+            delight. Whether you&apos;re an adventurous foodie or seeking
+            something truly special, our unique creations promise to captivate
+            your senses.
+          </p>
+          <a href="#" className="btn">
+            More
+          </a>
+        </article>
+        <img src={explore} alt="meal" className="explore-img" />
+      </section>
+      <img src={pepper} alt="red pepper" className="pepper" />
+      <section className="meals">
+        <Meat 
+          name="Appetizers"
+          image={meal_1}
+          price="Lorem Ipsum is simply dummy text of the printing and "
+
+        />
+        <Meat 
+          name="Sea Food"
+          image={meal_2}
+          price="Lorem Ipsum is simply dummy text of the printing and "
+
+        />
+        <Meat 
+          name="Main Dish"
+          image={meal_3}
+          price="Lorem Ipsum is simply dummy text of the printing and "
+
+        />
+        <Meat 
+          name="Salads"
+          image={meal_4}
+          price="Lorem Ipsum is simply dummy text of the printing and "
+
+        />
       </section>
     </main>
   );

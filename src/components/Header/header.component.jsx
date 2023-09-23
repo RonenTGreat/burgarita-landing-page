@@ -35,7 +35,7 @@ const Header = () => {
           <li className="nav-list"><a className="nav-link" href="#">Contact</a></li>
       </nav>
 
-      <a href="#" className="btn-signup">Sign Up</a>
+      <a href="#" className="btn">Sign Up</a>
     </header>
   );
 };

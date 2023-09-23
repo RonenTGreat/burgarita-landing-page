@@ -30,7 +30,8 @@
   font-weight: 600;
 }
 
-.btn-signup {
+.btn {
+  color: var(--secondary);
   font-size: 1.4rem;
   font-weight: 600;
   padding: 0.5rem 1.4rem;

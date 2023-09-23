@@ -69,6 +69,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   color: var(--secondary);
+  height: 100vh;
 }
 
 a {

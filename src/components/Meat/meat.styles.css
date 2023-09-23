@@ -5,6 +5,11 @@
   align-items: center;
 }
 
+.meats div{
+  text-align: center;
+}
+
 .meat-img {
   aspect-ratio: 1/1;
+  object-fit: contain;
 }
