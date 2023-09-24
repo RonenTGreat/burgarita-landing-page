@@ -100,27 +100,57 @@ form {
   align-items: center;
 }
 
-.explore-header{
+.explore-header {
   font-size: 4rem;
 }
 
-.explore-desc{
+.explore-desc {
   font-size: 1.5rem;
   margin: 3rem 0;
 }
 
-.explore-img{
+.explore-img {
   max-width: 35rem;
 }
 
-.pepper{
+.pepper {
   margin: 0 auto;
   width: 4.5rem;
 }
 
-
-.meals{
+.meals {
   display: flex;
   justify-content: center;
   gap: 2rem;
 }
+
+.chef {
+  display: grid;
+  place-items: center;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+.chef-header {
+  max-width: 50rem;
+  text-align: center;
+}
+
+.chef-heading {
+  font-size: 4rem;
+}
+
+.chef-recipe {
+  display: flex;
+  align-items: center;
+}
+
+.chef-recipe p{
+  font-size: 1.5rem;
+}
+
+.chef-recipe p .btn{
+  display: inline-block;
+  margin-top: 2rem;
+}
+

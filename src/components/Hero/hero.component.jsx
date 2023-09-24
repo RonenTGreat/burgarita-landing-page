@@ -5,11 +5,11 @@ import meat_1 from "../../assets/meat-1.png";
 import meat_2 from "../../assets/meat-2.png";
 import meat_3 from "../../assets/meat-3.png";
 import explore from "../../assets/explore-dish.png";
-import pepper from "../../assets/Red_Chili_Pepper.svg"
-import meal_1 from "../../assets/grilled-food.png"
-import meal_2 from "../../assets/oyster.png"
-import meal_3 from "../../assets/gros.png"
-import meal_4 from "../../assets/lovepik.png"
+import pepper from "../../assets/Red_Chili_Pepper.svg";
+import meal_1 from "../../assets/grilled-food.png";
+import meal_2 from "../../assets/oyster.png";
+import meal_3 from "../../assets/gros.png";
+import meal_4 from "../../assets/lovepik.png";
 
 const Hero = () => {
   return (
@@ -81,30 +81,52 @@ const Hero = () => {
       </section>
       <img src={pepper} alt="red pepper" className="pepper" />
       <section className="meals">
-        <Meat 
+        <Meat
           name="Appetizers"
           image={meal_1}
           price="Lorem Ipsum is simply dummy text of the printing and "
-
         />
-        <Meat 
+        <Meat
           name="Sea Food"
           image={meal_2}
           price="Lorem Ipsum is simply dummy text of the printing and "
-
         />
-        <Meat 
+        <Meat
           name="Main Dish"
           image={meal_3}
           price="Lorem Ipsum is simply dummy text of the printing and "
-
         />
-        <Meat 
+        <Meat
           name="Salads"
           image={meal_4}
           price="Lorem Ipsum is simply dummy text of the printing and "
-
         />
+      </section>
+      <section className="chef">
+        <article className="chef-header">
+          <h2 className="chef-heading">
+            Secret <span className="orange-text">steak recipe</span> from our
+            chef
+          </h2>
+          <p className="chef-desc">
+          Savor the tantalizing flavors of our chef&apos;s closely guarded secret steak recipe.
+          </p>
+        </article>
+        <article className="chef-recipe">
+          <img src={meat_2} alt="" />
+          <p>
+            <h3>Season the steaks with salt. Heat the oil in a frying pan large enough to fit </h3>
+            Once melted and foaming, add the garlic and thyme. Carefully put the
+            steak in the pan and cook for 3 mins for rare, 4 mins for medium and
+            6 mins for well done, flip the steak and repeat. Once cooked, add a
+            squeeze of lemon juice to the pan and spoon the lemony butter over
+            the steak.
+            <h3>Transfer the steaks to a warm plate and cover.</h3>
+            <a href="#" className="btn">
+              Full Method
+            </a>
+          </p>
+        </article>
       </section>
     </main>
   );
