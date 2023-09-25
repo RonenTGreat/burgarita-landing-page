@@ -10,6 +10,7 @@ import meal_1 from "../../assets/grilled-food.png";
 import meal_2 from "../../assets/oyster.png";
 import meal_3 from "../../assets/gros.png";
 import meal_4 from "../../assets/lovepik.png";
+import table from "../../assets/table.png"
 
 const Hero = () => {
   return (
@@ -127,6 +128,19 @@ const Hero = () => {
             </a>
           </p>
         </article>
+      </section>
+
+      <section className="booking">
+        <article>
+        <h1>Book a <span className="orange-text">Table</span></h1>
+        <p>Reserve your unforgettable dining experience now – book a table with us.</p>
+        <form className="book">
+          <input type="email" placeholder="Email" />
+          <input type="tel" placeholder="Contact Number" />
+          <input type="text" placeholder="Number of booking" />
+        </form>
+        </article>
+        <img src={table} alt="" />
       </section>
     </main>
   );
