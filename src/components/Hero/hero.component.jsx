@@ -12,10 +12,28 @@ import meal_3 from "../../assets/gros.png";
 import meal_4 from "../../assets/lovepik.png";
 import table from "../../assets/table.png";
 import { motion } from "framer-motion";
+import { useRef } from "react";
+
+const cardVariants = {
+  offscreen: {
+    x: "100vw",
+  },
+  onscreen: {
+    x: 0,
+    transition: {
+      type: "spring",
+      bounce: 0.4,
+      duration: 1,
+    },
+  },
+};
 
 const Hero = () => {
+  const constraintsRef = useRef(null);
+
   return (
-    <main className="container hero">
+    <main className="container hero" ref={constraintsRef}>
+      {/* Beginnig: First Section */}
       <section className="hero-section">
         <motion.article
           className="hero-article"
@@ -49,12 +67,15 @@ const Hero = () => {
           transition={{ delay: 1, duration: 1 }}
         />
       </section>
+      {/* End: First Section */}
+
+      {/* Beginnig: Second Section */}
 
       <motion.section
         className="platter"
         initial={{ scale: 0 }}
         whileInView={{ scale: 1 }}
-        transition={{delay: 0.5, duration: 1}}
+        transition={{ delay: 0.2, duration: 1 }}
         viewport={{ once: true }}
       >
         <article>
@@ -79,9 +100,17 @@ const Hero = () => {
           <Meat name="Barbecue Grill Beefsteak" image={meat_3} price="$40.00" />
         </div>
       </motion.section>
+      {/* End: Second Section */}
 
-      <section className="explore">
-        <article>
+      {/* Beginnig: Third Section */}
+
+      <motion.section
+        className="explore"
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ once: true, amount: 0.8 }}
+      >
+        <motion.article variants={cardVariants}>
           <h2 className="explore-header">
             Explore our <span className="orange-text">exclusive</span> dishes
           </h2>
@@ -96,33 +125,61 @@ const Hero = () => {
           <a href="#" className="btn">
             More
           </a>
-        </article>
-        <img src={explore} alt="meal" className="explore-img" />
-      </section>
-      <img src={pepper} alt="red pepper" className="pepper" />
-      <section className="meals">
+        </motion.article>
+        <motion.img
+          variants={cardVariants}
+          src={explore}
+          alt="meal"
+          className="explore-img"
+        />
+      </motion.section>
+      <motion.img
+        src={pepper}
+        alt="red pepper"
+        className="pepper"
+        drag
+        dragConstraints={constraintsRef}
+        dragMomentum={false}
+      />
+      <motion.section
+        className="meals"
+        initial={{ scale: 0 }}
+        whileInView={{ scale: 1 }}
+        transition={{ delay: 0.2, duration: 1 }}
+        viewport={{ once: true, amount: 0.8 }}
+      >
         <Meat
           name="Appetizers"
           image={meal_1}
-          price="Lorem Ipsum is simply dummy text of the printing and "
+          price="Begin your culinary journey with our delectable appetizers."
         />
         <Meat
           name="Sea Food"
           image={meal_2}
-          price="Lorem Ipsum is simply dummy text of the printing and "
+          price="Dive into a world of oceanic flavors with our exquisite seafood dishes."
         />
         <Meat
           name="Main Dish"
           image={meal_3}
-          price="Lorem Ipsum is simply dummy text of the printing and "
+          price="Savor our exquisite Main Dish creations, a symphony of flavors on every plate."
         />
         <Meat
           name="Salads"
           image={meal_4}
-          price="Lorem Ipsum is simply dummy text of the printing and "
+          price="Elevate your greens with our fresh and flavorful salads"
         />
-      </section>
-      <section className="chef">
+      </motion.section>
+      {/* End: Third Section */}
+
+      {/* Beginnig: Fourth Section */}
+
+      <motion.section
+        className="chef"
+        initial={{ opacity: 0, scale: 0 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ delay: 0.5, duration: 0.5 }}
+        viewport={{ once: true, amount: 0.8 }}
+      >
         <article className="chef-header">
           <h2 className="chef-heading">
             Secret <span className="orange-text">steak recipe</span> from our
@@ -151,9 +208,16 @@ const Hero = () => {
             </a>
           </p>
         </article>
-      </section>
+      </motion.section>
+      {/* End: Fourth Section */}
 
-      <section className="booking">
+      <motion.section
+        className="booking"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ delay: 0.7, duration: 1 }}
+        viewport={{ once: true, amount: 0.8 }}
+      >
         <article>
           <h1>
             Book a <span className="orange-text">Table</span>
@@ -172,7 +236,7 @@ const Hero = () => {
           </form>
         </article>
         <img src={table} alt="" />
-      </section>
+      </motion.section>
     </main>
   );
 };

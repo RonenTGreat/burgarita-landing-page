@@ -67,6 +67,10 @@
   cursor: pointer;
 }
 
+.btn-grab-it:hover{
+  opacity: 0.7;
+}
+
 .hero .hero-img {
   max-width: 41rem;
 }
@@ -93,6 +97,7 @@
 .platter-dish {
   display: flex;
   justify-content: center;
+  align-items: baseline;
 }
 
 .explore {
@@ -121,6 +126,7 @@
 .meals {
   display: flex;
   justify-content: center;
+  align-items: baseline;
   gap: 2rem;
 }
 

@@ -1,5 +1,5 @@
-import "./header.styles.css";
 import { motion } from "framer-motion";
+import "./header.styles.css";
 
 const Header = () => {
   return (
@@ -7,10 +7,11 @@ const Header = () => {
       className="container header"
       initial={{ y: "-100vh" }}
       animate={{ y: 0 }}
-      transition={{ delay: 1 }}
+      transition={{ delay: 1}}
     >
       <motion.a href="#" className="logo"
         whileHover={{scale: 1.1}}
+        transition={{duration: 0.5}}
       >
         <svg
           width="53"
