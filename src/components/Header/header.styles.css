@@ -39,3 +39,8 @@
   background: var(--primary);
   box-shadow: 0px 0px 80px 0px rgba(255, 47, 49, 0.25);
 }
+
+.btn:hover{
+  background: transparent;
+  border: 1px solid var(--primary);
+}

@@ -1,9 +1,17 @@
-import "./header.styles.css"
+import "./header.styles.css";
+import { motion } from "framer-motion";
 
 const Header = () => {
   return (
-    <header className="container header">
-      <div className="logo">
+    <motion.header
+      className="container header"
+      initial={{ y: "-100vh" }}
+      animate={{ y: 0 }}
+      transition={{ delay: 1 }}
+    >
+      <motion.a href="#" className="logo"
+        whileHover={{scale: 1.1}}
+      >
         <svg
           width="53"
           height="64"
@@ -26,17 +34,37 @@ const Header = () => {
         </svg>
 
         <p>Burgarita.</p>
-      </div>
+      </motion.a>
 
       <nav className="nav">
-          <li className="nav-list"><a className="nav-link" href="#">Our Menu</a></li>
-          <li className="nav-list"><a className="nav-link" href="#">Catering</a></li>
-          <li className="nav-list"><a className="nav-link" href="#">About Us</a></li>
-          <li className="nav-list"><a className="nav-link" href="#">Contact</a></li>
+        <motion.li className="nav-list" whileHover={{ y: -10 }}>
+          <a className="nav-link" href="#">
+            Our Menu
+          </a>
+        </motion.li>
+        <motion.li className="nav-list" whileHover={{ y: -10 }}>
+          <a className="nav-link" href="#">
+            Catering
+          </a>
+        </motion.li>
+        <motion.li className="nav-list" whileHover={{ y: -10 }}>
+          <a className="nav-link" href="#">
+            About Us
+          </a>
+        </motion.li>
+        <motion.li className="nav-list" whileHover={{ y: -10 }}>
+          <a className="nav-link" href="#">
+            Contact
+          </a>
+        </motion.li>
       </nav>
 
-      <a href="#" className="btn">Sign Up</a>
-    </header>
+      <motion.a href="#" className="btn"
+        whileHover={{x: [10, 0, 10, 0]}}
+      >
+        Sign Up
+      </motion.a>
+    </motion.header>
   );
 };
 
