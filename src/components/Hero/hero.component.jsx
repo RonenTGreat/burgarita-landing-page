@@ -138,6 +138,7 @@ const Hero = () => {
           <input type="email" placeholder="Email" />
           <input type="tel" placeholder="Contact Number" />
           <input type="text" placeholder="Number of booking" />
+          <button type="submit" className="btn">Submit</button>
         </form>
         </article>
         <img src={table} alt="" />

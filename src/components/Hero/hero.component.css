@@ -181,6 +181,12 @@
   border-radius: 2.75rem;
   border: 1px solid #f90;
   padding: 1.5rem;
+  color: white;
+}
+
+.book button{
+  border: none;
+  cursor: pointer;
 }
 
 .book input::placeholder{

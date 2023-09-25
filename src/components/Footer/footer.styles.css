@@ -1,0 +1,25 @@
+.footer-contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-contact div {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-contact div svg {
+  width: 1.5rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-links div {
+  display: flex;
+  gap: 1rem;
+}
