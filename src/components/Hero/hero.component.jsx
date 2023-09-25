@@ -10,13 +10,19 @@ import meal_1 from "../../assets/grilled-food.png";
 import meal_2 from "../../assets/oyster.png";
 import meal_3 from "../../assets/gros.png";
 import meal_4 from "../../assets/lovepik.png";
-import table from "../../assets/table.png"
+import table from "../../assets/table.png";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
     <main className="container hero">
       <section className="hero-section">
-        <article className="hero-article">
+        <motion.article
+          className="hero-article"
+          initial={{ x: "-100vw" }}
+          animate={{ x: 0 }}
+          transition={{ delay: 1, duration: 1 }}
+        >
           <p className="hero-taste">Tasty Food Forever</p>
           <h1 className="hero-header">
             Hot new items in the <span className="orange-text">resturant</span>{" "}
@@ -33,11 +39,24 @@ const Hero = () => {
               Grab it
             </button>
           </form>
-        </article>
-        <img src={food} className="hero-img" alt="" />
+        </motion.article>
+        <motion.img
+          src={food}
+          className="hero-img"
+          alt=""
+          initial={{ x: "100vw" }}
+          animate={{ x: 0 }}
+          transition={{ delay: 1, duration: 1 }}
+        />
       </section>
 
-      <section className="platter">
+      <motion.section
+        className="platter"
+        initial={{ scale: 0 }}
+        whileInView={{ scale: 1 }}
+        transition={{delay: 0.5, duration: 1}}
+        viewport={{ once: true }}
+      >
         <article>
           <h2 className="platter-header">
             Try one of the three new{" "}
@@ -59,7 +78,7 @@ const Hero = () => {
           />
           <Meat name="Barbecue Grill Beefsteak" image={meat_3} price="$40.00" />
         </div>
-      </section>
+      </motion.section>
 
       <section className="explore">
         <article>
@@ -110,13 +129,17 @@ const Hero = () => {
             chef
           </h2>
           <p className="chef-desc">
-          Savor the tantalizing flavors of our chef&apos;s closely guarded secret steak recipe.
+            Savor the tantalizing flavors of our chef&apos;s closely guarded
+            secret steak recipe.
           </p>
         </article>
         <article className="chef-recipe">
           <img src={meat_2} alt="" />
           <p>
-            <h3>Season the steaks with salt. Heat the oil in a frying pan large enough to fit </h3>
+            <h3>
+              Season the steaks with salt. Heat the oil in a frying pan large
+              enough to fit{" "}
+            </h3>
             Once melted and foaming, add the garlic and thyme. Carefully put the
             steak in the pan and cook for 3 mins for rare, 4 mins for medium and
             6 mins for well done, flip the steak and repeat. Once cooked, add a
@@ -132,14 +155,21 @@ const Hero = () => {
 
       <section className="booking">
         <article>
-        <h1>Book a <span className="orange-text">Table</span></h1>
-        <p>Reserve your unforgettable dining experience now – book a table with us.</p>
-        <form className="book">
-          <input type="email" placeholder="Email" />
-          <input type="tel" placeholder="Contact Number" />
-          <input type="text" placeholder="Number of booking" />
-          <button type="submit" className="btn">Submit</button>
-        </form>
+          <h1>
+            Book a <span className="orange-text">Table</span>
+          </h1>
+          <p>
+            Reserve your unforgettable dining experience now – book a table with
+            us.
+          </p>
+          <form className="book">
+            <input type="email" placeholder="Email" />
+            <input type="tel" placeholder="Contact Number" />
+            <input type="text" placeholder="Number of booking" />
+            <button type="submit" className="btn">
+              Submit
+            </button>
+          </form>
         </article>
         <img src={table} alt="" />
       </section>
