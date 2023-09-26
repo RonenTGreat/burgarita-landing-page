@@ -23,7 +23,8 @@ const cardVariants = {
     transition: {
       type: "spring",
       bounce: 0.4,
-      duration: 1,
+      delay: 0.2,
+      duration: 2,
     },
   },
 };
@@ -39,7 +40,7 @@ const Hero = () => {
           className="hero-article"
           initial={{ x: "-100vw" }}
           animate={{ x: 0 }}
-          transition={{ delay: 1, duration: 1 }}
+          transition={{ delay: 0.5, duration: 2 }}
         >
           <p className="hero-taste">Tasty Food Forever</p>
           <h1 className="hero-header">
@@ -64,7 +65,7 @@ const Hero = () => {
           alt=""
           initial={{ x: "100vw" }}
           animate={{ x: 0 }}
-          transition={{ delay: 1, duration: 1 }}
+          transition={{ delay: 0.5, duration: 2 }}
         />
       </section>
       {/* End: First Section */}
@@ -75,7 +76,7 @@ const Hero = () => {
         className="platter"
         initial={{ scale: 0 }}
         whileInView={{ scale: 1 }}
-        transition={{ delay: 0.2, duration: 1 }}
+        transition={{ delay: 0.1, duration: 2 }}
         viewport={{ once: true }}
       >
         <article>
@@ -145,7 +146,7 @@ const Hero = () => {
         className="meals"
         initial={{ scale: 0 }}
         whileInView={{ scale: 1 }}
-        transition={{ delay: 0.2, duration: 1 }}
+        transition={{ delay: 0.2, duration: 2 }}
         viewport={{ once: true, amount: 0.8 }}
       >
         <Meat
@@ -177,7 +178,7 @@ const Hero = () => {
         className="chef"
         initial={{ opacity: 0, scale: 0 }}
         whileInView={{ opacity: 1, scale: 1 }}
-        transition={{ delay: 0.5, duration: 0.5 }}
+        transition={{ delay: 0.5, duration: 2 }}
         viewport={{ once: true, amount: 0.8 }}
       >
         <article className="chef-header">
@@ -215,7 +216,7 @@ const Hero = () => {
         className="booking"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ delay: 0.7, duration: 1 }}
+        transition={{ delay: 0.5, duration: 2 }}
         viewport={{ once: true, amount: 0.8 }}
       >
         <article>
