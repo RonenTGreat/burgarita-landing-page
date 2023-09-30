@@ -15,6 +15,10 @@
 
 ### How it looks
 
+
+https://github.com/RonenTGreat/burgarita-landing-page/assets/86826138/9fa2b7cc-2660-4a3e-9d15-8e98f2725e05
+
+
 ## My process
 
 ### Built with
